@@ -1,0 +1,23 @@
+uuid: 6126aaca-dbcf-409e-940a-73f07c80e2f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.brochure_request
+    - field.storage.contact_message.field_contact_number
+id: contact_message.brochure_request.field_contact_number
+field_name: field_contact_number
+entity_type: contact_message
+bundle: brochure_request
+label: 'Contact Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 10
+  max: 13
+  prefix: ''
+  suffix: ''
+field_type: integer

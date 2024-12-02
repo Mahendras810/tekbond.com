@@ -1,0 +1,30 @@
+uuid: 0f4c3629-7447-4aaf-918f-5955d38b92c8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:social_media_slider:938ac02d-e8b5-4174-a109-6b0370cd39c2'
+  module:
+    - block_content
+    - system
+  theme:
+    - tekbond
+id: tekbond_socialmediaslider
+theme: tekbond
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:938ac02d-e8b5-4174-a109-6b0370cd39c2'
+settings:
+  id: 'block_content:938ac02d-e8b5-4174-a109-6b0370cd39c2'
+  label: 'Social Media Slider'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

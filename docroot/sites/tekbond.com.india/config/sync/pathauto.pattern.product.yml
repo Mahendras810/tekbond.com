@@ -1,0 +1,26 @@
+uuid: 9dc780e2-27a0-42fb-998c-6a3573caee11
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: product
+label: Product
+type: 'canonical_entities:commerce_product'
+pattern: '/products/[commerce_product:type]/[commerce_product:title]'
+selection_criteria:
+  e7c80245-c95e-4f91-b085-920d71d21574:
+    id: 'entity_bundle:commerce_product'
+    negate: false
+    uuid: e7c80245-c95e-4f91-b085-920d71d21574
+    context_mapping:
+      commerce_product: commerce_product
+    bundles:
+      accessories: accessories
+      adhesives: adhesives
+      anaerobic: anaerobic
+      colour_sprays: colour_sprays
+      sealants: sealants
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,66 @@
+uuid: 3ebe8857-c0b9-465b-a84a-cee06b18bc5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.anaerobic
+    - field.field.commerce_product.anaerobic.body
+    - field.field.commerce_product.anaerobic.field_brochure
+    - field.field.commerce_product.anaerobic.field_image
+  module:
+    - commerce_product
+    - file
+    - image
+    - text
+id: commerce_product.anaerobic.default
+targetEntityType: commerce_product
+bundle: anaerobic
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_brochure:
+    type: file_default
+    label: inline
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  variations:
+    type: commerce_add_to_cart
+    label: hidden
+    settings:
+      combine: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  created: true
+  langcode: true
+  stores: true
+  uid: true

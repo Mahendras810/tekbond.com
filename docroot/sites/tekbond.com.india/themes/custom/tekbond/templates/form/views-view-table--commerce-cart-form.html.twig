@@ -1,0 +1,78 @@
+{#
+/**
+ * @file
+ * Theme override for displaying a view as a table.
+ *
+ * Available variables:
+ * - attributes: Remaining HTML attributes for the element.
+ * - title: The title of this group of rows.
+ * - header: The table header columns.
+ * - caption_needed: Is the caption tag needed.
+ * - caption: The caption for this table.
+ * - summary: Summary for the table details.
+ * - description: Extended description for the table details.
+ * - rows: Table row items.
+ * - responsive: A flag indicating whether table is responsive.
+ * - sticky: A flag indicating whether table header is sticky.
+ *
+ * @see template_preprocess_views_view_table()
+ */
+#}
+{%
+  set classes = [
+    'cart_table',
+    'table',
+    'table-striped',
+    'views-table',
+    'views-view-table',
+    'cols-' ~ header|length,
+    responsive ? 'responsive-enabled',
+    sticky ? 'sticky-enabled',
+  ]
+%}
+<table class="cart_table">
+  {% if caption_needed %}
+    <caption>
+      {% if caption %}
+        {{ caption }}
+      {% else %}
+        {{ title }}
+      {% endif %}
+      {% if summary or description %}
+        <details>
+          {% if summary %}
+            <summary>{{ summary }}</summary>
+          {% endif %}
+          {% if description %}
+            {{ description }}
+          {% endif %}
+        </details>
+      {% endif %}
+    </caption>
+  {% endif %}
+  {% if header %}
+    <thead>
+      <tr>
+        {% for key, column in header %}
+          <th{{ column.attributes.addClass('cart-col-' ~ fields[key]).setAttribute('scope', 'col') }}>
+            {{ column.content }}{{ column.sort_indicator }}
+          </th>
+        {% endfor %}
+      </tr>
+    </thead>
+  {% endif %}
+  <tbody>
+    {% for row in rows %}
+      <tr class="cart_item">
+        {% for key, column in row.columns %}
+          <td>
+            {% for content in column.content %}
+              {{ content.separator }}{{ content.field_output }}
+            {% endfor %}
+          </td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+

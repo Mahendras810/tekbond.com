@@ -1,0 +1,25 @@
+uuid: 6305fc62-b97e-4b1a-a56a-ce83e312cf6e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_left:46daca28-7ce1-4a5b-a8c0-27e3be75a9e7'
+  module:
+    - block_content
+  theme:
+    - tekbond
+id: tekbond_aboutus
+theme: tekbond
+region: footer
+weight: -12
+provider: null
+plugin: 'block_content:46daca28-7ce1-4a5b-a8c0-27e3be75a9e7'
+settings:
+  id: 'block_content:46daca28-7ce1-4a5b-a8c0-27e3be75a9e7'
+  label: 'About Us'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

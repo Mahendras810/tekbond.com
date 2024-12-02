@@ -1,0 +1,47 @@
+{#
+/**
+ * @file
+ * Theme override to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ */
+#}
+{% if title %}
+  <h3>{{ title }}</h3>
+{% endif %}
+{% for row in rows %}
+  {% set product = row.content['#commerce_product'] %}
+  {% set product_id = product.id() %}
+  {% set product_url = '' %}
+
+  {% if product_id %}
+    {% set product_url = url('entity.commerce_product.canonical', {'commerce_product': product_id}) %}
+  {% endif %}
+
+  <div{{ row.attributes.addClass(default_row_class ? 'views-row') }}>
+    {% if product.field_not_for_sale.value == 1 %}
+      <div class="field--type-image field__item">
+        {% if product.field_image.entity %}
+          {% set image_url = file_url(product.field_image.entity.uri.value) %}
+          <img src="{{ image_url }}" alt="{{ product.field_image.alt }}">
+        {% else %}
+          <p>No image available.</p>
+        {% endif %}
+      </div>
+      <a href="{{ product_url }}">{{ product.title.value }}</a>
+      <p>This product is not available for sale.</p>
+    {% else %}
+      {{ row.content|raw }}
+    {% endif %}
+  </div>
+{% endfor %}
+

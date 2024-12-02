@@ -1,0 +1,22 @@
+uuid: f4a132b5-ff42-400a-9b37-00bf2a87f621
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_cart
+  theme:
+    - tekbond
+id: tekbond_cart
+theme: tekbond
+region: nav_additional
+weight: -9
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: Cart
+  label_display: '0'
+  provider: commerce_cart
+  dropdown: false
+  show_if_empty: true
+visibility: {  }

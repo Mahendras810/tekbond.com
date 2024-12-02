@@ -1,0 +1,28 @@
+uuid: 444adea8-73ba-4e24-9a58-c92b447aa155
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tekbond
+_core:
+  default_config_hash: lTbIBBrptCbJVN4PT8_o77FMJk8lWjtLrxNj-ljZT5Y
+id: tekbond_local_tasks
+theme: tekbond
+region: content
+weight: -12
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/products/*'

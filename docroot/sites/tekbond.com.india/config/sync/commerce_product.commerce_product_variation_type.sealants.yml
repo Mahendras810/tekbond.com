@@ -1,0 +1,10 @@
+uuid: 2404bccd-91dc-41c0-bd3d-a13e9cf60daf
+langcode: en
+status: true
+dependencies: {  }
+id: sealants
+label: Sealants
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: true

@@ -1,0 +1,22 @@
+uuid: 6ee7b7db-6721-4068-9c66-9546298b8d3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_our_products_category_text
+    - paragraphs.paragraphs_type.our_products_category
+  module:
+    - text
+id: paragraph.our_products_category.field_our_products_category_text
+field_name: field_our_products_category_text
+entity_type: paragraph
+bundle: our_products_category
+label: 'Our Products Category Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

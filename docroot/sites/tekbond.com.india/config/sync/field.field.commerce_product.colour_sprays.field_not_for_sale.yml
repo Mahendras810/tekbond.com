@@ -1,0 +1,23 @@
+uuid: df8a2b90-4b43-4d5c-95b9-1996df4ebeba
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.colour_sprays
+    - field.storage.commerce_product.field_not_for_sale
+id: commerce_product.colour_sprays.field_not_for_sale
+field_name: field_not_for_sale
+entity_type: commerce_product
+bundle: colour_sprays
+label: 'Not for Sale'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

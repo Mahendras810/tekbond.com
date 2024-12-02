@@ -1,0 +1,20 @@
+uuid: 60c65589-c103-461a-931a-1492a5695a6e
+langcode: en
+status: false
+dependencies:
+  theme:
+    - tekbond
+_core:
+  default_config_hash: 14a8miRhQ9pOK-k-xPTANFo67wRGvvx09Ieen53htk0
+id: tekbond_page_title
+theme: tekbond
+region: content
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

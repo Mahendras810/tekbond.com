@@ -1,0 +1,30 @@
+uuid: 476260bc-a3c6-4a70-887b-82066aab87f5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:93289bb3-2b27-4ab7-88f7-61dc57aaf7e9'
+  module:
+    - block_content
+    - system
+  theme:
+    - tekbond
+id: tekbond_wheretobuy
+theme: tekbond
+region: content
+weight: -4
+provider: null
+plugin: 'block_content:93289bb3-2b27-4ab7-88f7-61dc57aaf7e9'
+settings:
+  id: 'block_content:93289bb3-2b27-4ab7-88f7-61dc57aaf7e9'
+  label: 'Where to buy'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /where-to-buy

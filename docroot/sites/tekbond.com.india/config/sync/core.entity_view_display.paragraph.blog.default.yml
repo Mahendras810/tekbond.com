@@ -1,0 +1,31 @@
+uuid: fc3be250-c4fa-43c7-8374-43e1c8d5089d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.blog.field_about_body
+    - field.field.paragraph.blog.field_title
+    - paragraphs.paragraphs_type.blog
+  module:
+    - text
+id: paragraph.blog.default
+targetEntityType: paragraph
+bundle: blog
+mode: default
+content:
+  field_about_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

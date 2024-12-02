@@ -1,0 +1,10 @@
+uuid: 25d3fa85-cd0e-411d-94f0-ac5b5d7ed4dd
+langcode: en
+status: true
+dependencies: {  }
+id: colour_sprays
+label: Aerosols
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: true

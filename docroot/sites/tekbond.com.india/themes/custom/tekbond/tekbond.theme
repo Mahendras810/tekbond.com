@@ -1,0 +1,128 @@
+<?php
+
+/**
+ * @file
+ * tekbond theme Subtheme of bootstrap5 theme file.
+ */
+
+use Drupal\block\Entity\Block;
+use Drupal\bootstrap5\SettingsManager;
+use Drupal\bootstrap5\SubthemeFormManager;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Render\Element;
+use Drupal\views\ViewExecutable;
+use Drupal\Core\Block\BlockBase;
+use Drupal\views\Views;
+use Drupal\Core\Block\BlockManagerInterface;
+use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
+use Symfony\Component\DependencyInjection\ContainerInterface;
+
+
+/**
+ * Implements theme_preprocess_html().
+ */
+function tekbond_preprocess_html(&$variables) {
+  // Body colour theme.
+  $variables['b5_body_schema'] = theme_get_setting('b5_body_schema');
+  $variables['b5_body_bg_schema'] = theme_get_setting('b5_body_bg_schema');
+  $current_path_alias = \Drupal::service('path_alias.manager')->getAliasByPath(\Drupal::service('path.current')->getPath());
+  \Drupal::logger('tekbond')->notice('Current path alias: @path', ['@path' => $current_path_alias]);
+
+  // Add custom body classes based on the path alias.
+  $custom_class = '';
+  switch ($current_path_alias) {
+    case '/products/sealants':
+      $custom_class = 'path-products-sealants';
+      break;
+
+    case '/products/aerosols':
+      $custom_class = 'path-products-aerosols';
+      break;
+
+    case '/products/adhesives':
+      $custom_class = 'path-products-adhesives';
+      break;
+
+    case '/products/accessories':
+      $custom_class = 'path-products-accessories';
+      break;
+
+    case '/products/anaerobic':
+      $custom_class = 'path-products-anaerobic';
+      break;
+  }
+
+  if (!empty($custom_class)) {
+    if (!isset($variables['attributes']['class']) || !is_array($variables['attributes']['class'])) {
+      $variables['attributes']['class'] = [];
+    }
+    $variables['attributes']['class'][] = $custom_class;
+  }
+
+  // Log the added classes for debugging.
+  if (isset($variables['attributes']['class']) && is_array($variables['attributes']['class'])) {
+    \Drupal::logger('tekbond')->notice('Added classes: @classes', ['@classes' => implode(', ', $variables['attributes']['class'])]);
+  } else {
+    \Drupal::logger('tekbond')->notice('No classes were added.');
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ *
+ * Pass block region value to content so this can be used in
+ * THEME_theme_suggestions_menu_alter.
+ */
+function tekbond_preprocess_block(&$variables) {
+  $block_plugin_id = $variables['elements']['#plugin_id'];
+  
+  if (isset($variables['elements']['#id'])) {
+    $block = Block::load($variables['elements']['#id']);
+    if ($block) {
+      $region = Block::load($variables['elements']['#id'])->getRegion();
+      if (!empty($region)) {
+        $variables['content']['#attributes']['data-block']['region'] = $region;
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for node templates.
+ */
+function tekbond_preprocess_node(&$variables) {
+  // Check if the current node is of the specific content type you want to target.
+  if ($variables['node']->getType() == 'home_page') {
+    // Exclude rendering of the paragraph field from the node content.
+    unset($variables['content']['field_banner_slider']);
+  }
+}
+
+/**
+ * Implements hook_preprocess_paragraph().
+ */
+function tekbond_preprocess_paragraph__latest_products(&$variables) {
+  // Get the machine name of the block to be rendered.
+  $block_machine_name = 'tekbond_views_block__latest_products_slider';
+
+  // Load the block by machine name.
+  $block = \Drupal\block\Entity\Block::load($block_machine_name);
+
+  // Check if the block exists.
+  if ($block) {
+    // Render the block content.
+    $block_content = \Drupal::entityTypeManager()
+      ->getViewBuilder('block')
+      ->view($block);
+    
+    // Pass the rendered block content to the template.
+    $variables['block_content'] = $block_content;
+  }
+}
+
+function tekbond_theme_suggestions_alter(array &$suggestions, array $variables, $hook) {
+
+  if ($hook == 'form' & !empty($variables['element']['#id'])) {
+    $suggestions[] = 'form__' . str_replace('-', '_', $variables['element']['#id']);
+  }
+}

@@ -1,0 +1,20 @@
+uuid: 60db2fb0-ff43-43c7-8416-8b9fd8f30c1a
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_customer_image
+field_name: field_customer_image
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

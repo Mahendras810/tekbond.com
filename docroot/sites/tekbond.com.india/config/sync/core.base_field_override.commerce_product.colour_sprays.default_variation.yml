@@ -1,0 +1,23 @@
+uuid: 8a97f517-f9d5-4b04-a11f-4d3cb48492b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.colour_sprays
+    - commerce_product.commerce_product_variation_type.colour_sprays
+id: commerce_product.colour_sprays.default_variation
+field_name: default_variation
+entity_type: commerce_product
+bundle: colour_sprays
+label: 'Default variation'
+description: 'The default variation.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings:
+    target_bundles:
+      colour_sprays: colour_sprays
+field_type: entity_reference

@@ -1,0 +1,49 @@
+uuid: 6efd2639-3afc-401c-8a0b-17d58f2e575f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_latest_products
+    - node.type.home_page
+    - paragraphs.paragraphs_type.latest_products
+  module:
+    - entity_reference_revisions
+id: node.home_page.field_latest_products
+field_name: field_latest_products
+entity_type: node
+bundle: home_page
+label: 'Latest Products'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      latest_products: latest_products
+    negate: 0
+    target_bundles_drag_drop:
+      about_banner:
+        weight: 8
+        enabled: false
+      about_section:
+        weight: 9
+        enabled: false
+      banner_slide:
+        weight: 10
+        enabled: false
+      latest_products:
+        weight: 11
+        enabled: true
+      our_products_category:
+        weight: 12
+        enabled: false
+      why_choose_us:
+        weight: 13
+        enabled: false
+      why_choose_us_sections:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

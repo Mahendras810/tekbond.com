@@ -1,0 +1,20 @@
+uuid: 19171438-8fe9-4427-a0cb-365108f07672
+langcode: en
+status: false
+dependencies:
+  theme:
+    - tekbond
+id: tekbond_views_block__customer_reviews_customer_reviews
+theme: tekbond
+region: hidden_region
+weight: -10
+provider: null
+plugin: 'views_block:customer_reviews-customer_reviews'
+settings:
+  id: 'views_block:customer_reviews-customer_reviews'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

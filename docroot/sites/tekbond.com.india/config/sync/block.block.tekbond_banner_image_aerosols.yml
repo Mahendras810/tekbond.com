@@ -1,0 +1,30 @@
+uuid: 76848124-8f5f-4a70-9665-383ab9efe5c1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_image:4d449657-722f-4742-b84e-053399223f92'
+  module:
+    - block_content
+    - system
+  theme:
+    - tekbond
+id: tekbond_banner_image_aerosols
+theme: tekbond
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:4d449657-722f-4742-b84e-053399223f92'
+settings:
+  id: 'block_content:4d449657-722f-4742-b84e-053399223f92'
+  label: 'Banner Image Aerosols'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /products/aerosols

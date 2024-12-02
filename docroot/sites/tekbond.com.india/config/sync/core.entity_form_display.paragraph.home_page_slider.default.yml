@@ -1,0 +1,26 @@
+uuid: 3658ca41-3837-4516-b752-33d5a9db3e66
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.home_page_slider.field_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.home_page_slider
+  module:
+    - image
+id: paragraph.home_page_slider.default
+targetEntityType: paragraph
+bundle: home_page_slider
+mode: default
+content:
+  field_image:
+    type: image_image
+    weight: 4
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

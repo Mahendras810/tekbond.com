@@ -1,0 +1,16 @@
+uuid: d04c68ab-a78b-4a79-9ed1-2fc48d45ec8d
+langcode: en
+status: true
+dependencies: {  }
+id: split_local
+label: 'Split Local'
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ./sites/tekbondindia.organochems.com.local/config/split_local
+module: {  }
+theme: {  }
+complete_list: {  }
+partial_list: {  }

@@ -1,0 +1,24 @@
+uuid: 4266eb01-1cd8-4b7c-872e-dc39cd92115c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.our_products_category
+  module:
+    - views
+  theme:
+    - tekbond
+id: tekbond_views_block__our_products_category_products_category
+theme: tekbond
+region: hidden_region
+weight: -11
+provider: null
+plugin: 'views_block:our_products_category-products_category'
+settings:
+  id: 'views_block:our_products_category-products_category'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

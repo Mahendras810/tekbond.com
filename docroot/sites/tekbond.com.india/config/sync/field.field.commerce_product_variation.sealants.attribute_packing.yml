@@ -1,0 +1,29 @@
+uuid: 7c254469-87da-480c-9a20-129de8144707
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_attribute.packing
+    - commerce_product.commerce_product_variation_type.sealants
+    - field.storage.commerce_product_variation.attribute_packing
+id: commerce_product_variation.sealants.attribute_packing
+field_name: attribute_packing
+entity_type: commerce_product_variation
+bundle: sealants
+label: Packing
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_product_attribute_value'
+  handler_settings:
+    target_bundles:
+      packing: packing
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

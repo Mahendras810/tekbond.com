@@ -1,0 +1,43 @@
+uuid: 1f689408-9394-41ad-a22d-916aa353edfe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_about_section
+    - node.type.home_page
+    - paragraphs.paragraphs_type.about_section
+  module:
+    - entity_reference_revisions
+id: node.home_page.field_about_section
+field_name: field_about_section
+entity_type: node
+bundle: home_page
+label: 'About Section'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      about_section: about_section
+    negate: 0
+    target_bundles_drag_drop:
+      about_banner:
+        weight: 6
+        enabled: false
+      about_section:
+        weight: 7
+        enabled: true
+      banner_slide:
+        weight: 8
+        enabled: false
+      why_choose_us:
+        weight: 9
+        enabled: false
+      why_choose_us_sections:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

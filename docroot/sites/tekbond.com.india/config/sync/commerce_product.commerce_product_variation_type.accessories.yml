@@ -1,0 +1,10 @@
+uuid: 60138e8f-61ca-4784-8fe7-6ff3ed127fc5
+langcode: en
+status: true
+dependencies: {  }
+id: accessories
+label: Accessories
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: true

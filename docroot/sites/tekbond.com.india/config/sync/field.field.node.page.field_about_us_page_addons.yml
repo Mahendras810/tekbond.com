@@ -1,0 +1,47 @@
+uuid: 25134e1a-07b4-4eea-be78-938f84ba73ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_about_us_page_addons
+    - node.type.page
+    - paragraphs.paragraphs_type.about_banner
+    - paragraphs.paragraphs_type.about_section
+    - paragraphs.paragraphs_type.why_choose_us
+  module:
+    - entity_reference_revisions
+id: node.page.field_about_us_page_addons
+field_name: field_about_us_page_addons
+entity_type: node
+bundle: page
+label: 'About Us Page Addons'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      about_banner: about_banner
+      about_section: about_section
+      why_choose_us: why_choose_us
+    negate: 0
+    target_bundles_drag_drop:
+      about_banner:
+        weight: 6
+        enabled: true
+      about_section:
+        weight: 7
+        enabled: true
+      banner_slide:
+        weight: 8
+        enabled: false
+      why_choose_us:
+        weight: 9
+        enabled: true
+      why_choose_us_sections:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

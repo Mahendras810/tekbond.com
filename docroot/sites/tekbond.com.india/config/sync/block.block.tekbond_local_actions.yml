@@ -1,0 +1,20 @@
+uuid: 0bafae6e-8487-4c87-8877-ebe3b4b499d4
+langcode: en
+status: true
+dependencies:
+  theme:
+    - tekbond
+_core:
+  default_config_hash: TMM7ylTH37obkdBwxwQ9M3XnyIo48AU9euIn4JO_sMg
+id: tekbond_local_actions
+theme: tekbond
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

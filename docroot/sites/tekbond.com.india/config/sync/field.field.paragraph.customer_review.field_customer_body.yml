@@ -1,0 +1,22 @@
+uuid: 98c7be4e-ab27-4248-ac9a-c822ff513e8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_customer_body
+    - paragraphs.paragraphs_type.customer_review
+  module:
+    - text
+id: paragraph.customer_review.field_customer_body
+field_name: field_customer_body
+entity_type: paragraph
+bundle: customer_review
+label: 'Customer Body'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

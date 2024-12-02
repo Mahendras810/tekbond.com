@@ -1,0 +1,26 @@
+uuid: c9d85654-5a8a-4c84-8692-2f91cdaf66bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.home_page_slider.field_image
+    - paragraphs.paragraphs_type.home_page_slider
+  module:
+    - image
+id: paragraph.home_page_slider.default
+targetEntityType: paragraph
+bundle: home_page_slider
+mode: default
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden: {  }

@@ -1,0 +1,58 @@
+uuid: f930a20e-fdb8-4f2d-b4e0-b75062f94b0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_where_to_buy_section
+    - node.type.home_page
+    - paragraphs.paragraphs_type.where_to_buy_section
+  module:
+    - entity_reference_revisions
+id: node.home_page.field_where_to_buy_section
+field_name: field_where_to_buy_section
+entity_type: node
+bundle: home_page
+label: 'Where to buy section'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      where_to_buy_section: where_to_buy_section
+    negate: 0
+    target_bundles_drag_drop:
+      about_banner:
+        weight: 11
+        enabled: false
+      about_section:
+        weight: 12
+        enabled: false
+      banner_slide:
+        weight: 13
+        enabled: false
+      blog:
+        weight: 14
+        enabled: false
+      customer_review:
+        weight: 15
+        enabled: false
+      latest_products:
+        weight: 16
+        enabled: false
+      our_products_category:
+        weight: 17
+        enabled: false
+      where_to_buy_section:
+        weight: 18
+        enabled: true
+      why_choose_us:
+        weight: 19
+        enabled: false
+      why_choose_us_sections:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

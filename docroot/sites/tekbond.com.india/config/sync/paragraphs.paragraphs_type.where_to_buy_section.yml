@@ -1,0 +1,10 @@
+uuid: 9b727833-1aef-43d4-8b06-f83d226bc30f
+langcode: en
+status: true
+dependencies: {  }
+id: where_to_buy_section
+label: 'Where to buy section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

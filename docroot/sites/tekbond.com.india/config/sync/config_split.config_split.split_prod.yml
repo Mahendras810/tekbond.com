@@ -1,0 +1,16 @@
+uuid: 2750f9b5-c7d3-45d6-bd93-c4803e140ff7
+langcode: en
+status: true
+dependencies: {  }
+id: split_prod
+label: 'Split Production'
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ./sites/tekbondindia.organochems.com.local/config/split_prod
+module: {  }
+theme: {  }
+complete_list: {  }
+partial_list: {  }

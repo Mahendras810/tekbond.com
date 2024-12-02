@@ -1,0 +1,49 @@
+uuid: d76daa9d-372c-45ae-8052-ea3368dd7d9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_our_products_category
+    - node.type.home_page
+    - paragraphs.paragraphs_type.our_products_category
+  module:
+    - entity_reference_revisions
+id: node.home_page.field_our_products_category
+field_name: field_our_products_category
+entity_type: node
+bundle: home_page
+label: 'Our Products Category'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      our_products_category: our_products_category
+    negate: 0
+    target_bundles_drag_drop:
+      about_banner:
+        weight: 8
+        enabled: false
+      about_section:
+        weight: 9
+        enabled: false
+      banner_slide:
+        weight: 10
+        enabled: false
+      latest_products:
+        weight: 11
+        enabled: false
+      our_products_category:
+        weight: 12
+        enabled: true
+      why_choose_us:
+        weight: 13
+        enabled: false
+      why_choose_us_sections:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,55 @@
+uuid: 5c689661-4d3e-4a4c-8ada-c076d23ef197
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_customer_reviews_section
+    - node.type.home_page
+    - paragraphs.paragraphs_type.customer_review
+  module:
+    - entity_reference_revisions
+id: node.home_page.field_customer_reviews_section
+field_name: field_customer_reviews_section
+entity_type: node
+bundle: home_page
+label: 'Customer Reviews Section'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      customer_review: customer_review
+    negate: 0
+    target_bundles_drag_drop:
+      about_banner:
+        weight: 10
+        enabled: false
+      about_section:
+        weight: 11
+        enabled: false
+      banner_slide:
+        weight: 12
+        enabled: false
+      blog:
+        weight: 13
+        enabled: false
+      customer_review:
+        weight: 14
+        enabled: true
+      latest_products:
+        weight: 15
+        enabled: false
+      our_products_category:
+        weight: 16
+        enabled: false
+      why_choose_us:
+        weight: 17
+        enabled: false
+      why_choose_us_sections:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,22 @@
+uuid: 0c0985d2-3588-4981-8a99-c95850081b57
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tekbond
+_core:
+  default_config_hash: opU3J32kpdjG5k2t_N7yl-6Z3NB1GA96OupXq92sPOc
+id: tekbond_messages
+theme: tekbond
+region: content
+weight: -13
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

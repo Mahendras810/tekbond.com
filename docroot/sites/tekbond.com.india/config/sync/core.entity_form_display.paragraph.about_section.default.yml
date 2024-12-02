@@ -1,0 +1,66 @@
+uuid: 756149b6-3beb-4776-8f74-f4f9fa687a67
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_section.field_about_body
+    - field.field.paragraph.about_section.field_about_title
+    - field.field.paragraph.about_section.field_button
+    - field.field.paragraph.about_section.field_heading
+    - field.field.paragraph.about_section.field_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.about_section
+  module:
+    - image
+    - link
+    - text
+id: paragraph.about_section.default
+targetEntityType: paragraph
+bundle: about_section
+mode: default
+content:
+  field_about_body:
+    type: text_textarea_with_summary
+    weight: 0
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_about_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_button:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_heading:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 4
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,7 @@
+uuid: 100c6f94-0f88-483f-a20a-2f97b9dfa7e3
+langcode: en
+status: true
+dependencies: {  }
+id: packing
+label: Packing
+elementType: select

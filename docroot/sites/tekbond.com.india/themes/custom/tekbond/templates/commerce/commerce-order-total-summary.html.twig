@@ -1,0 +1,48 @@
+{#
+/**
+ * @file
+ * Default order total summary template.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the wrapper.
+ * - order_entity: The order entity.
+ * - totals: An array of order totals values with the following keys:
+ *   - subtotal: The order subtotal price.
+ *   - adjustments: The adjustments:
+ *     - type: The adjustment type.
+ *     - label: The adjustment label.
+ *     - amount: The adjustment amount.
+ *     - percentage: The decimal adjustment percentage, when available. For example, "0.2" for a 20% adjustment.
+ *   - total: The order total price.
+ *
+ * @ingroup themeable
+ */
+#}
+{{ attach_library('commerce_order/total_summary') }}
+<table class="cart_totals">
+    <tbody>
+        <tr>
+            {% if totals.subtotal %}
+            <td>Cart Subtotal</td>
+            <td class="Cart Subtotal">
+                <span class="amount">{{ totals.subtotal|commerce_price_format }}</span>
+            </td>
+            {% endif %}
+        </tr>
+    </tbody>
+    {% for adjustment in totals.adjustments %}
+        <div class="order-total-line order-total-line__adjustment order-total-line__adjustment--{{ adjustment.type|clean_class }}">
+              <span class="order-total-line-label">{{ adjustment.label }} </span><span class="order-total-line-value">{{ adjustment.amount|commerce_price_format }}</span>
+        </div>
+    {% endfor %}
+    <tfoot>
+        <tr class="order-total">
+            {% if totals.total %}     
+            <td>Order Total</td>
+            <td data-title="Total">
+                <strong><span class="amount">{{ totals.total|commerce_price_format }}</span></strong>
+            </td>
+            {% endif %}
+        </tr>
+    </tfoot>
+</table>

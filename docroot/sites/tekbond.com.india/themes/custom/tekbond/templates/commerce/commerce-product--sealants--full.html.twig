@@ -1,0 +1,67 @@
+{#
+/**
+ * @file
+ *
+ * Default product template.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the wrapper.
+ * - product: The rendered product fields.
+ *   Use 'product' to print them all, or print a subset such as
+ *   'product.title'. Use the following code to exclude the
+ *   printing of a given field:
+ *   @code
+ *   {{ product|without('title') }}
+ *   @endcode
+ * - product_entity: The product entity.
+ * - product_url: The product URL.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @ingroup themeable
+ */
+#}
+<article{{ attributes }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+
+  <div class="container">
+    <div class="product-details">
+      <div class="left-column">
+        <!-- Main Image -->
+        <div class="main-image">
+          {% if product.field_image['#items']|length > 0 %}
+            {% set first_image = product.field_image['#items'][0].entity %}
+            <img id="main-product-image" src="{{ file_url(first_image.uri.value) }}" alt="{{ first_image.alt }}">
+          {% endif %}
+        </div>
+
+        <!-- Thumbnail Images -->
+        <div class="image-thumbnails owl-carousel">
+          {% if product.field_image['#items']|length > 1 %}
+            {% for image in product.field_image['#items'] %}
+              {% if loop.index > 0 %}
+                <div class="thumbnail-image">
+                  <img src="{{ file_url(image.entity.uri.value) }}" alt="{{ image.entity.alt }}">
+                </div>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="right-column">
+        <div class="product-description">
+          <h1>{{ product.title }}</h1>
+          {{ product.body }}
+        </div>
+        {#{% if product.field_brochure['#items'] is not empty %}#}
+        {#  <a href="{{ file_url(product.field_brochure['#items'][0].entity.uri.value) }}" class="download-button">Download Brochure</a>#}
+        {#{% endif %}#}
+         <div class="container-inline">For brochures, data sheets, or any other information regarding Tekbond and its products, please submit a request through our <a href="/web/contact" target="_blank">Contact Us</a> page. Our team will respond promptly with the requested details</div>
+      </div>
+    </div>
+  </div>
+</article>

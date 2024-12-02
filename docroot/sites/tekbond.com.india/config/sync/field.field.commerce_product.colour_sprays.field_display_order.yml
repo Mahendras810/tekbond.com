@@ -1,0 +1,25 @@
+uuid: 6637758b-2a6b-41c6-8ddd-48abc8bd0896
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.colour_sprays
+    - field.storage.commerce_product.field_display_order
+id: commerce_product.colour_sprays.field_display_order
+field_name: field_display_order
+entity_type: commerce_product
+bundle: colour_sprays
+label: 'Display Order'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 1000
+default_value_callback: ''
+settings:
+  min: 1
+  max: 1000
+  prefix: ''
+  suffix: ''
+field_type: integer

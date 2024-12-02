@@ -1,0 +1,61 @@
+uuid: 87a7a265-970d-4129-9cb2-f8d81b959197
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_banner_slider
+    - node.type.home_page
+    - paragraphs.paragraphs_type.home_page_slider
+  module:
+    - entity_reference_revisions
+id: node.home_page.field_home_banner_slider
+field_name: field_home_banner_slider
+entity_type: node
+bundle: home_page
+label: 'Home Banner Slider'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      home_page_slider: home_page_slider
+    negate: 0
+    target_bundles_drag_drop:
+      about_banner:
+        weight: 12
+        enabled: false
+      about_section:
+        weight: 13
+        enabled: false
+      blog:
+        weight: 14
+        enabled: false
+      customer_review:
+        weight: 15
+        enabled: false
+      home_page_banner_slider:
+        weight: 16
+        enabled: false
+      home_page_slider:
+        weight: 17
+        enabled: true
+      latest_products:
+        weight: 18
+        enabled: false
+      our_products_category:
+        weight: 19
+        enabled: false
+      where_to_buy_section:
+        weight: 20
+        enabled: false
+      why_choose_us:
+        weight: 21
+        enabled: false
+      why_choose_us_sections:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions

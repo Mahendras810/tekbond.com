@@ -1,0 +1,23 @@
+uuid: e306c07e-c2c9-4774-b5ec-a2c884e1876c
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.sealants
+    - commerce_product.commerce_product_variation_type.sealants
+id: commerce_product.sealants.default_variation
+field_name: default_variation
+entity_type: commerce_product
+bundle: sealants
+label: 'Default variation'
+description: 'The default variation.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings:
+    target_bundles:
+      sealants: sealants
+field_type: entity_reference

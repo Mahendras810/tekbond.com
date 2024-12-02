@@ -1,0 +1,60 @@
+uuid: 04293bdf-c424-49e1-985f-068a8b1e2833
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.brochure_request
+    - field.field.contact_message.brochure_request.field_contact_number
+    - field.field.contact_message.brochure_request.field_email_address
+    - field.field.contact_message.brochure_request.field_first_name
+    - field.field.contact_message.brochure_request.field_last_name
+id: contact_message.brochure_request.default
+targetEntityType: contact_message
+bundle: brochure_request
+mode: default
+content:
+  field_contact_number:
+    type: number
+    weight: 3
+    region: content
+    settings:
+      placeholder: '+919876543210'
+    third_party_settings: {  }
+  field_email_address:
+    type: email_default
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_first_name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_last_name:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden:
+  copy: true
+  mail: true
+  message: true
+  name: true
+  preview: true
+  subject: true

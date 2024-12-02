@@ -1,0 +1,14 @@
+uuid: 7602bfda-2f77-404d-a23c-bde7d89eb1a2
+langcode: en
+status: true
+dependencies: {  }
+id: colour_sprays
+label: Aerosols
+traits: {  }
+locked: false
+description: ''
+variationType: colour_sprays
+variationTypes:
+  - colour_sprays
+multipleVariations: true
+injectVariationFields: true

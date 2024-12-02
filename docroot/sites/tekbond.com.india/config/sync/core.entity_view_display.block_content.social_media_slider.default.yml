@@ -1,0 +1,23 @@
+uuid: f3ec9394-1ed2-4289-bf19-4fde9e2d9821
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_media_slider
+    - field.field.block_content.social_media_slider.body
+  module:
+    - text
+id: block_content.social_media_slider.default
+targetEntityType: block_content
+bundle: social_media_slider
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

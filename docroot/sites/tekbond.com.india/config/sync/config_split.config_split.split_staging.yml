@@ -1,0 +1,16 @@
+uuid: 30b4a6a6-db68-4590-b2bf-04bab7081501
+langcode: en
+status: true
+dependencies: {  }
+id: split_staging
+label: 'Split Staging'
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ./sites/tekbondindia.organochems.com.local/config/split_staging
+module: {  }
+theme: {  }
+complete_list: {  }
+partial_list: {  }

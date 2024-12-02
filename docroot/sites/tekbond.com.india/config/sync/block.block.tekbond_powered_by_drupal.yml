@@ -1,0 +1,22 @@
+uuid: a1a37bdd-dc74-4d2a-8adc-8be68cefec89
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - tekbond
+_core:
+  default_config_hash: WTeQWCvhdHUTyAtuA5ziLxcaR-dH7_jTRLscdG45QO0
+id: tekbond_powered_by_drupal
+theme: tekbond
+region: footer
+weight: -10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

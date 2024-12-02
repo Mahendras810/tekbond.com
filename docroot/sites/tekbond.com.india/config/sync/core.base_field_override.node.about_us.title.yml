@@ -1,0 +1,18 @@
+uuid: aa88211b-f244-4d43-be28-52d96ed05e39
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.about_us
+id: node.about_us.title
+field_name: title
+entity_type: node
+bundle: about_us
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

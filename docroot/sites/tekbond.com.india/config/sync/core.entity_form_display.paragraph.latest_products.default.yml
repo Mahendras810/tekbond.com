@@ -1,0 +1,45 @@
+uuid: 37ecc112-dd8e-43b8-84ca-4974f79a958b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.latest_products.field_block
+    - field.field.paragraph.latest_products.field_heading
+    - field.field.paragraph.latest_products.field_latest_product_text
+    - paragraphs.paragraphs_type.latest_products
+  module:
+    - text
+id: paragraph.latest_products.default
+targetEntityType: paragraph
+bundle: latest_products
+mode: default
+content:
+  field_block:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_heading:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_latest_product_text:
+    type: text_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

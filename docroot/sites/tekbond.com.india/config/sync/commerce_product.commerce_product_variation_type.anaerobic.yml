@@ -1,0 +1,10 @@
+uuid: 10839e06-f7fd-42ee-a9f7-fe47a1893494
+langcode: en
+status: true
+dependencies: {  }
+id: anaerobic
+label: Anaerobic
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: true

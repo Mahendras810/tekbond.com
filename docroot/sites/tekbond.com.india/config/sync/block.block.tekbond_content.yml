@@ -1,0 +1,22 @@
+uuid: 3ca81271-950d-4feb-bc9a-dde320c4ff97
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tekbond
+_core:
+  default_config_hash: V7-w-fXmGCdRdy8mHVNr5T_62K9HEwZowcpoEnv3lOg
+id: tekbond_content
+theme: tekbond
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

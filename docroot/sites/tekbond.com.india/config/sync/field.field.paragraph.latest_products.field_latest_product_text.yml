@@ -1,0 +1,22 @@
+uuid: 87681f4c-ebc4-4d02-bea5-a8bb116dada5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_latest_product_text
+    - paragraphs.paragraphs_type.latest_products
+  module:
+    - text
+id: paragraph.latest_products.field_latest_product_text
+field_name: field_latest_product_text
+entity_type: paragraph
+bundle: latest_products
+label: 'Latest Product Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

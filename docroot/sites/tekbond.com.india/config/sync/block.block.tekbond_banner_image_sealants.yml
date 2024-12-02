@@ -1,0 +1,30 @@
+uuid: 133dd40b-fac6-4686-b933-77467da7f58a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_image:8f8b3498-7c4f-4818-a7a1-53a5067b0731'
+  module:
+    - block_content
+    - system
+  theme:
+    - tekbond
+id: tekbond_banner_image_sealants
+theme: tekbond
+region: content
+weight: -6
+provider: null
+plugin: 'block_content:8f8b3498-7c4f-4818-a7a1-53a5067b0731'
+settings:
+  id: 'block_content:8f8b3498-7c4f-4818-a7a1-53a5067b0731'
+  label: 'Banner Image  Sealants'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /products/sealants

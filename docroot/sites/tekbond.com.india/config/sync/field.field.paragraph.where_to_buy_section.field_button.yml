@@ -1,0 +1,23 @@
+uuid: d8922854-08aa-45bd-8c59-4c17580bad6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_button
+    - paragraphs.paragraphs_type.where_to_buy_section
+  module:
+    - link
+id: paragraph.where_to_buy_section.field_button
+field_name: field_button
+entity_type: paragraph
+bundle: where_to_buy_section
+label: Button
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

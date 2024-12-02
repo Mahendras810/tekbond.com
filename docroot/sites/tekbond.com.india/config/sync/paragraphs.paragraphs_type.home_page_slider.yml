@@ -1,0 +1,10 @@
+uuid: cbd75594-25b8-4ddc-8087-dcd91d69dca9
+langcode: en
+status: true
+dependencies: {  }
+id: home_page_slider
+label: 'Home Page Slider'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

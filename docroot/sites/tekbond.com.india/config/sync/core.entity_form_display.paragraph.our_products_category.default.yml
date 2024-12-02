@@ -1,0 +1,34 @@
+uuid: ccf219d1-368e-4828-a7a4-3c27be12e4e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.our_products_category.field_heading
+    - field.field.paragraph.our_products_category.field_our_products_category_text
+    - paragraphs.paragraphs_type.our_products_category
+  module:
+    - text
+id: paragraph.our_products_category.default
+targetEntityType: paragraph
+bundle: our_products_category
+mode: default
+content:
+  field_heading:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_our_products_category_text:
+    type: text_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

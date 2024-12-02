@@ -1,0 +1,22 @@
+uuid: 3ad48e6d-5839-486f-bf18-8d5e43acf297
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - tekbond
+_core:
+  default_config_hash: PPja5VEmnHCg9cenJN755A6uYk1BSUsNxE75TbAcU_0
+id: tekbond_help
+theme: tekbond
+region: content
+weight: -11
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

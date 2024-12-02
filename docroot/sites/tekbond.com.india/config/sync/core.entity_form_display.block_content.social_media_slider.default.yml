@@ -1,0 +1,40 @@
+uuid: 09b29c76-613e-4bd7-8296-1e736b52345d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_media_slider
+    - field.field.block_content.social_media_slider.body
+  module:
+    - text
+id: block_content.social_media_slider.default
+targetEntityType: block_content
+bundle: social_media_slider
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

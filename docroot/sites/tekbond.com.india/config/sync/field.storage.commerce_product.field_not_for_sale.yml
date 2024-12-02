@@ -1,0 +1,18 @@
+uuid: 4ffa1633-eb92-4687-82f8-3ce49eb3ce0a
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.field_not_for_sale
+field_name: field_not_for_sale
+entity_type: commerce_product
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,14 @@
+uuid: 0b791804-38cd-429c-9092-4f13c5c35e12
+langcode: en
+status: true
+dependencies: {  }
+id: sealants
+label: Sealants
+traits: {  }
+locked: false
+description: ''
+variationType: sealants
+variationTypes:
+  - sealants
+multipleVariations: true
+injectVariationFields: true

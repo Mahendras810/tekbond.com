@@ -1,0 +1,10 @@
+uuid: 0bdc7e63-7726-4f5e-a828-394cfd131724
+langcode: en
+status: true
+dependencies: {  }
+id: our_products_category
+label: 'Our Products Category'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,24 @@
+uuid: ca81a7a3-ffb2-4992-8747-297a08a0e994
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_about_body
+    - paragraphs.paragraphs_type.about_section
+  module:
+    - text
+id: paragraph.about_section.field_about_body
+field_name: field_about_body
+entity_type: paragraph
+bundle: about_section
+label: 'About Body'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

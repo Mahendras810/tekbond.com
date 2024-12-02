@@ -1,0 +1,9 @@
+uuid: 7e21604f-9b59-452f-b299-d90a64b462cf
+langcode: en
+status: true
+dependencies: {  }
+name: 'Product Categories'
+vid: product_categories
+description: 'Our Products Category'
+weight: 0
+new_revision: false

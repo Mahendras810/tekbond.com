@@ -1,0 +1,11 @@
+uuid: c127f2a8-334e-40cd-84ff-4f6f79f1d424
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.brochure_request
+id: contact_message.brochure_request
+target_entity_type_id: contact_message
+target_bundle: brochure_request
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,24 @@
+uuid: 035f67bc-07b9-40de-a8f3-33b2432120c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.latest_products_slider
+  module:
+    - views
+  theme:
+    - tekbond
+id: tekbond_views_block__latest_products_slider
+theme: tekbond
+region: hidden_region
+weight: -12
+provider: null
+plugin: 'views_block:latest_products_slider-latest_products_slider'
+settings:
+  id: 'views_block:latest_products_slider-latest_products_slider'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

@@ -1,0 +1,31 @@
+uuid: cfa968a7-92e8-48a9-9140-df43ad7575af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.customer_review.field_customer_body
+    - field.field.paragraph.customer_review.field_customer_title
+    - paragraphs.paragraphs_type.customer_review
+  module:
+    - text
+id: paragraph.customer_review.default
+targetEntityType: paragraph
+bundle: customer_review
+mode: default
+content:
+  field_customer_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_customer_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

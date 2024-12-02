@@ -1,0 +1,18 @@
+uuid: 27e30fd5-f8f8-4fa6-9910-196c5c96d2cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.sealants
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: commerce_product.sealants
+target_entity_type_id: commerce_product
+target_bundle: sealants
+default_langcode: site_default
+language_alterable: true

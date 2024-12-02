@@ -1,0 +1,10 @@
+uuid: a59fea5d-21cc-497f-bcfe-6a2125389261
+langcode: en
+status: true
+dependencies: {  }
+id: blog
+label: Blog
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

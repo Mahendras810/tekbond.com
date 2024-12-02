@@ -1,0 +1,12 @@
+uuid: 9bd80573-cbac-460e-8991-c3b850bc218a
+langcode: en
+status: true
+dependencies: {  }
+id: brochure_request
+label: 'Brochure Request'
+recipients:
+  - mahendrasinghmth.317@gmail.com
+reply: "Dear [submission:values:first_name],\r\n\r\nThank you for your interest in our product. You can download the brochure using the link below:\r\n\r\n[submission:values:brochure_url]\r\n\r\nBest regards,\r\nTekbond Team"
+weight: 0
+message: 'Thank you for your interest in our product we are sending brochure via email.'
+redirect: ''

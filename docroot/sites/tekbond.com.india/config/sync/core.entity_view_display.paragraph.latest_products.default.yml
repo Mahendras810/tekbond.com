@@ -1,0 +1,40 @@
+uuid: 3d398a0b-5071-4473-b03f-0950632467bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.latest_products.field_block
+    - field.field.paragraph.latest_products.field_heading
+    - field.field.paragraph.latest_products.field_latest_product_text
+    - paragraphs.paragraphs_type.latest_products
+  module:
+    - text
+id: paragraph.latest_products.default
+targetEntityType: paragraph
+bundle: latest_products
+mode: default
+content:
+  field_block:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_latest_product_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

@@ -1,0 +1,20 @@
+uuid: 336ec5bb-ae1e-46d8-a536-da4da62b7bd2
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.sealants
+  module:
+    - path
+id: commerce_product.sealants.path
+field_name: path
+entity_type: commerce_product
+bundle: sealants
+label: 'URL alias'
+description: 'The product URL alias.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

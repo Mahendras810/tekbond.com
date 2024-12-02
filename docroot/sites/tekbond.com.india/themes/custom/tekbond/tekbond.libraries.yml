@@ -1,0 +1,45 @@
+global-styling:
+  css:
+    theme:
+      https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css: {}
+      https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css: {}
+      https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css: {}
+      https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css: {}
+      https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css: {}
+      https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css: {}
+      https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css: {}
+      css/aos.css: {}
+      css/flaticon.css: {}
+      css/lightbox.css: {}
+      css/magnific-popup.css: {}
+      css/meanmenu.css: {}
+      css/odometer.min.css: {}
+      css/remixicon.css: {}
+      css/responsive.css: {}
+      css/style.css: {}
+      css/custom.css: {}
+  js:
+    js/custom.js: {}
+    https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js: {}
+
+  dependencies:
+    - core/jquery
+    - core/jquery.form
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/drupal.progress
+    - core/once
+    - core/tabbable
+    - core/loadjs
+    - core/drupal.message
+
+owlcarousel2:
+  css:
+    theme:
+      https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css: {}
+      https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css: {}
+  js:
+    https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js: {}
+  dependencies:
+    - core/jquery

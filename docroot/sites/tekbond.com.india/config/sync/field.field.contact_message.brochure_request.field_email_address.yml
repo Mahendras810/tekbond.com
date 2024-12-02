@@ -1,0 +1,19 @@
+uuid: e90b999e-3d9d-4cf7-866c-0f8aad10cf5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.brochure_request
+    - field.storage.contact_message.field_email_address
+id: contact_message.brochure_request.field_email_address
+field_name: field_email_address
+entity_type: contact_message
+bundle: brochure_request
+label: 'Email Address'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

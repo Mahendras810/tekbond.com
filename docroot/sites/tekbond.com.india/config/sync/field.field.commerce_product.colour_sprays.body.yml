@@ -1,0 +1,24 @@
+uuid: bacf7e41-76ae-40ef-8d87-63e0a165cd89
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.colour_sprays
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.colour_sprays.body
+field_name: body
+entity_type: commerce_product
+bundle: colour_sprays
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

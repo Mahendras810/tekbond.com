@@ -1,0 +1,14 @@
+uuid: bf15d6c4-f01a-4f03-8300-1ecbe574d83f
+langcode: en
+status: true
+dependencies: {  }
+id: adhesives
+label: Adhesives
+traits: {  }
+locked: false
+description: ''
+variationType: adhesives
+variationTypes:
+  - adhesives
+multipleVariations: true
+injectVariationFields: true

@@ -1,0 +1,60 @@
+uuid: 889190fc-4f72-4fc0-a913-6d8c21c714a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_about_banner
+    - node.type.about_us
+    - paragraphs.paragraphs_type.about_section
+    - paragraphs.paragraphs_type.why_choose_us
+  module:
+    - entity_reference_revisions
+id: node.about_us.field_about_banner
+field_name: field_about_banner
+entity_type: node
+bundle: about_us
+label: 'About Banner'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      about_section: about_section
+      why_choose_us: why_choose_us
+    negate: 0
+    target_bundles_drag_drop:
+      about_banner:
+        weight: 8
+        enabled: false
+      about_section:
+        weight: 9
+        enabled: true
+      banner_slide:
+        weight: 10
+        enabled: false
+      blog:
+        weight: 14
+        enabled: false
+      customer_review:
+        weight: 15
+        enabled: false
+      latest_products:
+        weight: 11
+        enabled: false
+      our_products_category:
+        weight: 12
+        enabled: false
+      where_to_buy_section:
+        weight: 18
+        enabled: false
+      why_choose_us:
+        weight: 13
+        enabled: true
+      why_choose_us_sections:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

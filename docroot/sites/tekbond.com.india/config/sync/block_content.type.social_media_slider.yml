@@ -1,0 +1,8 @@
+uuid: 40fb4699-8915-4ef0-933f-4fd935f4d6c0
+langcode: en
+status: true
+dependencies: {  }
+id: social_media_slider
+label: 'Social Media Slider'
+revision: false
+description: ''

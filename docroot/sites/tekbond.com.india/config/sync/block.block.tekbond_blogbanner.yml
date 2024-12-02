@@ -1,0 +1,30 @@
+uuid: 37735758-1580-451f-8e9e-ce630d06df6b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b7c47abc-a104-4bfb-9c82-c5b512732f71'
+  module:
+    - block_content
+    - system
+  theme:
+    - tekbond
+id: tekbond_blogbanner
+theme: tekbond
+region: content
+weight: -3
+provider: null
+plugin: 'block_content:b7c47abc-a104-4bfb-9c82-c5b512732f71'
+settings:
+  id: 'block_content:b7c47abc-a104-4bfb-9c82-c5b512732f71'
+  label: 'Blog Banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /blog

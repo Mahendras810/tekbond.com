@@ -1,0 +1,26 @@
+uuid: 908295a6-90d9-4d5d-88d6-50c940a68c67
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - tekbond
+_core:
+  default_config_hash: oeRGYebAcE3mFre737SAfnl4PVpRJgA0exQaLBAWze0
+id: tekbond_breadcrumbs
+theme: tekbond
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

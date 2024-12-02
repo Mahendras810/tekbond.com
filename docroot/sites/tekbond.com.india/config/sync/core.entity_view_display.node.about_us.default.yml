@@ -1,0 +1,95 @@
+uuid: 2c1f2262-5999-4cba-8b36-b6926ef5a74b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.about_us.body
+    - field.field.node.about_us.field_about_banner
+    - node.type.about_us
+  module:
+    - entity_reference_revisions
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          0a5b61b8-5eaf-4ef6-8927-70af1364ec1a:
+            uuid: 0a5b61b8-5eaf-4ef6-8927-70af1364ec1a
+            region: content
+            configuration:
+              id: 'field_block:node:about_us:field_about_banner'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          6a379cf9-b2ac-46c2-b812-faf5ba86e5e1:
+            uuid: 6a379cf9-b2ac-46c2-b812-faf5ba86e5e1
+            region: content
+            configuration:
+              id: 'field_block:node:about_us:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          5513035d-c4b2-4222-a093-fff3d59ea4da:
+            uuid: 5513035d-c4b2-4222-a093-fff3d59ea4da
+            region: content
+            configuration:
+              id: 'extra_field_block:node:about_us:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: node.about_us.default
+targetEntityType: node
+bundle: about_us
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_about_banner:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true

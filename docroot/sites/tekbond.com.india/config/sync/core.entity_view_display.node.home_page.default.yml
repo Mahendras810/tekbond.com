@@ -1,0 +1,152 @@
+uuid: 2fb38af6-8abe-4cbe-93cc-c38e0303fdac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.home_page.body
+    - field.field.node.home_page.field_about_section
+    - field.field.node.home_page.field_blog
+    - field.field.node.home_page.field_customer_reviews_section
+    - field.field.node.home_page.field_home_banner_slider
+    - field.field.node.home_page.field_latest_products
+    - field.field.node.home_page.field_our_products_category
+    - field.field.node.home_page.field_where_to_buy_section
+    - node.type.home_page
+  content:
+    - 'block_content:social_media_slider:938ac02d-e8b5-4174-a109-6b0370cd39c2'
+  module:
+    - block_content
+    - entity_reference_revisions
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          0aa8333e-66f4-4741-ad39-5b41e4b1baf5:
+            uuid: 0aa8333e-66f4-4741-ad39-5b41e4b1baf5
+            region: content
+            configuration:
+              id: 'field_block:node:home_page:field_blog'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          48836f20-71e2-46f0-9768-169de4044a05:
+            uuid: 48836f20-71e2-46f0-9768-169de4044a05
+            region: content
+            configuration:
+              id: 'field_block:node:home_page:field_our_products_category'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          1d642c88-d85e-4315-8f8d-e1fe9eb551e7:
+            uuid: 1d642c88-d85e-4315-8f8d-e1fe9eb551e7
+            region: content
+            configuration:
+              id: 'block_content:938ac02d-e8b5-4174-a109-6b0370cd39c2'
+              label: 'Social Media Slider'
+              label_display: '0'
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 5
+            additional: {  }
+          5b54c537-05bb-42f3-bf95-5c1d39ab7e6e:
+            uuid: 5b54c537-05bb-42f3-bf95-5c1d39ab7e6e
+            region: content
+            configuration:
+              id: 'extra_field_block:node:home_page:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 6
+            additional: {  }
+          7ce02986-032f-4c84-a167-e74ea6009495:
+            uuid: 7ce02986-032f-4c84-a167-e74ea6009495
+            region: content
+            configuration:
+              id: 'field_block:node:home_page:field_where_to_buy_section'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+id: node.home_page.default
+targetEntityType: node
+bundle: home_page
+mode: default
+content:
+  field_blog:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_our_products_category:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_where_to_buy_section:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  body: true
+  field_about_section: true
+  field_customer_reviews_section: true
+  field_home_banner_slider: true
+  field_latest_products: true
+  langcode: true

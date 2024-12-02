@@ -1,0 +1,37 @@
+uuid: 09588cf2-e0a5-4801-bf4b-e8729c36fb34
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.customer_review.body
+    - field.field.node.customer_review.field_customer_designation
+    - field.field.node.customer_review.field_customer_image
+    - field.field.node.customer_review.field_customer_name
+    - node.type.customer_review
+  module:
+    - text
+    - user
+id: node.customer_review.teaser
+targetEntityType: node
+bundle: customer_review
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_customer_designation: true
+  field_customer_image: true
+  field_customer_name: true
+  langcode: true

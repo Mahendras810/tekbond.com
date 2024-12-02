@@ -1,0 +1,72 @@
+uuid: bb98c0e4-5394-4886-a346-c5483a6659b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.accessories
+    - core.entity_view_mode.commerce_product.teaser
+    - field.field.commerce_product.accessories.body
+    - field.field.commerce_product.accessories.field_brochure
+    - field.field.commerce_product.accessories.field_image
+  module:
+    - commerce_product
+    - file
+    - image
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: commerce_product.accessories.teaser
+targetEntityType: commerce_product
+bundle: accessories
+mode: teaser
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_brochure:
+    type: file_default
+    label: inline
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  variations:
+    type: commerce_add_to_cart
+    label: hidden
+    settings:
+      combine: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  created: true
+  langcode: true
+  stores: true
+  uid: true

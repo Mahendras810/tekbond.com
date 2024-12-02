@@ -1,0 +1,30 @@
+uuid: f7b0a7fc-7a78-4442-bf49-8006a026af20
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_image:ad3dbee9-3ffe-4a21-923f-fabe71737318'
+  module:
+    - block_content
+    - system
+  theme:
+    - tekbond
+id: tekbond_banner_image_accessories
+theme: tekbond
+region: content
+weight: -9
+provider: null
+plugin: 'block_content:ad3dbee9-3ffe-4a21-923f-fabe71737318'
+settings:
+  id: 'block_content:ad3dbee9-3ffe-4a21-923f-fabe71737318'
+  label: 'Banner Image Accessories'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /products/accessories

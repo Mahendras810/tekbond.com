@@ -1,0 +1,45 @@
+uuid: 8b2cf2a1-8bae-44c1-be61-a130cadb35e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.why_choose_us_sections.field_image
+    - field.field.paragraph.why_choose_us_sections.field_section_body
+    - field.field.paragraph.why_choose_us_sections.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.why_choose_us_sections
+  module:
+    - image
+    - text
+id: paragraph.why_choose_us_sections.default
+targetEntityType: paragraph
+bundle: why_choose_us_sections
+mode: default
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_section_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

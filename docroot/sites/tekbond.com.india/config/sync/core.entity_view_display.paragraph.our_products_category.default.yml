@@ -1,0 +1,31 @@
+uuid: f6b96eed-02f2-4f07-b5e9-f999c7591811
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.our_products_category.field_heading
+    - field.field.paragraph.our_products_category.field_our_products_category_text
+    - paragraphs.paragraphs_type.our_products_category
+  module:
+    - text
+id: paragraph.our_products_category.default
+targetEntityType: paragraph
+bundle: our_products_category
+mode: default
+content:
+  field_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_our_products_category_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

@@ -1,0 +1,30 @@
+uuid: e9d10a67-0654-4c40-8a03-5aaf6f110c52
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_image:3791cef2-ffc1-4e1e-8293-4d34eb7e32c8'
+  module:
+    - block_content
+    - system
+  theme:
+    - tekbond
+id: tekbond_banner_image_adhesives
+theme: tekbond
+region: content
+weight: -8
+provider: null
+plugin: 'block_content:3791cef2-ffc1-4e1e-8293-4d34eb7e32c8'
+settings:
+  id: 'block_content:3791cef2-ffc1-4e1e-8293-4d34eb7e32c8'
+  label: 'Banner Image Adhesives'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /products/adhesives

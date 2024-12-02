@@ -1,0 +1,23 @@
+uuid: d836f0dc-d344-4a21-aede-4abced6f77d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.anaerobic
+    - commerce_product.commerce_product_variation_type.anaerobic
+id: commerce_product.anaerobic.default_variation
+field_name: default_variation
+entity_type: commerce_product
+bundle: anaerobic
+label: 'Default variation'
+description: 'The default variation.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings:
+    target_bundles:
+      anaerobic: anaerobic
+field_type: entity_reference

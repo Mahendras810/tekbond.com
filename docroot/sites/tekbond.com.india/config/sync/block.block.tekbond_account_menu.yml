@@ -1,0 +1,27 @@
+uuid: abb1c929-0b26-4b0f-a246-d69ca9fa0099
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - tekbond
+_core:
+  default_config_hash: 3ExyB04q4FzMM2F65pjM6F6GfcOVc0Zp61DY7Hb-ZUw
+id: tekbond_account_menu
+theme: tekbond
+region: nav_additional
+weight: -10
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

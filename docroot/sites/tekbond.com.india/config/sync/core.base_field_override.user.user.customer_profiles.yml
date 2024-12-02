@@ -1,0 +1,24 @@
+uuid: 86609b33-898a-4d2d-824a-8bb933e06a75
+langcode: en
+status: true
+dependencies:
+  config:
+    - profile.type.customer
+  module:
+    - user
+id: user.user.customer_profiles
+field_name: customer_profiles
+entity_type: user
+bundle: user
+label: 'Customer profiles'
+description: 'User profiles.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings:
+    target_bundles:
+      customer: customer
+field_type: entity_reference

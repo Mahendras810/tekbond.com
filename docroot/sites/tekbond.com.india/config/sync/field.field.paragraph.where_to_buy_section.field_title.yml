@@ -1,0 +1,19 @@
+uuid: f268439f-e672-4c60-aa70-ec9a4cdab0f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.where_to_buy_section
+id: paragraph.where_to_buy_section.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: where_to_buy_section
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

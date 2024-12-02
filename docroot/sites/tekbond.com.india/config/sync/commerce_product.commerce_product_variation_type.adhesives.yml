@@ -1,0 +1,10 @@
+uuid: 43ae6631-1b42-46ec-acf7-05da2c82bd07
+langcode: en
+status: true
+dependencies: {  }
+id: adhesives
+label: Adhesives
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: true

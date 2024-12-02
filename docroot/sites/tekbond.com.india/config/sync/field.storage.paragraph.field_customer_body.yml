@@ -1,0 +1,20 @@
+uuid: 4074200b-c34d-4934-9fcd-e7fa7547f716
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_customer_body
+field_name: field_customer_body
+entity_type: paragraph
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

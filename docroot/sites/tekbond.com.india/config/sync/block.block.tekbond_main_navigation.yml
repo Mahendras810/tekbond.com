@@ -1,0 +1,27 @@
+uuid: d6727333-5514-4b40-9feb-9d4cf3f04600
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - tekbond
+_core:
+  default_config_hash: RbnLwWQdYqJnagaGCBg4_MUlrlqMZRJl2DBczPQ-_WQ
+id: tekbond_main_navigation
+theme: tekbond
+region: nav_main
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

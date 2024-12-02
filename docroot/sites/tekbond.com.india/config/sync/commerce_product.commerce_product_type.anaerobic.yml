@@ -1,0 +1,14 @@
+uuid: 4eba615f-a5d0-4bbe-a1a4-e6b060d92a3f
+langcode: en
+status: true
+dependencies: {  }
+id: anaerobic
+label: Anaerobic
+traits: {  }
+locked: false
+description: ''
+variationType: anaerobic
+variationTypes:
+  - anaerobic
+multipleVariations: true
+injectVariationFields: true

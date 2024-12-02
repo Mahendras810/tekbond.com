@@ -1,0 +1,33 @@
+_core:
+  default_config_hash: 2r-Hwv0M1XV4-Kzc-yfPvdvaeEkrFR3xvEhYGlusdHM
+image_captcha_fonts_preview_map_cache:
+  f8341dca609983020304c2069f48edc0b73d9b439850adff71a5f11ad5f4514d:
+    uri: sites/tekbondindia.organochems.com.local/modules/contrib/captcha/modules/image_captcha/fonts/Tesox/tesox.ttf
+    filename: tesox.ttf
+    name: tesox
+  9437f2d7d0f18104f3298513b414e106c9f3e3e4b3134713c4dd16b16f9fae53:
+    uri: sites/tekbondindia.organochems.com.local/modules/contrib/captcha/modules/image_captcha/fonts/Tuffy/Tuffy.ttf
+    filename: Tuffy.ttf
+    name: Tuffy
+  a85518e46a8b55ae91c7fc8e0ac36bf87337977e324aa3a8512d310070d58d11:
+    uri: sites/tekbondindia.organochems.com.local/modules/contrib/captcha/modules/image_captcha/fonts/Tuffy/Tuffy_Bold.ttf
+    filename: Tuffy_Bold.ttf
+    name: Tuffy_Bold
+image_captcha_fonts:
+  - f8341dca609983020304c2069f48edc0b73d9b439850adff71a5f11ad5f4514d
+  - 9437f2d7d0f18104f3298513b414e106c9f3e3e4b3134713c4dd16b16f9fae53
+image_captcha_font_size: 30
+image_captcha_character_spacing: '1.2'
+image_captcha_image_allowed_chars: aAbBCdEeFfGHhijKLMmNPQRrSTtWXYZ23456789
+image_captcha_code_length: 5
+image_captcha_rtl_support: 0
+image_captcha_background_color: '#ffffff'
+image_captcha_foreground_color: '#000000'
+image_captcha_foreground_color_randomness: 100
+image_captcha_file_format: 1
+image_captcha_distortion_amplitude: 0
+image_captcha_bilinear_interpolation: 0
+image_captcha_dot_noise: 0
+image_captcha_line_noise: 0
+image_captcha_noise_level: 5
+image_captcha_text_refresh: 'Reload Captcha'

@@ -1,0 +1,59 @@
+uuid: 61135b61-3a1d-41a1-82ad-ce8ae56bc7ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.adhesives
+    - core.entity_view_mode.commerce_product_variation.cart
+    - field.field.commerce_product_variation.adhesives.attribute_color
+    - field.field.commerce_product_variation.adhesives.attribute_packing
+    - field.field.commerce_product_variation.adhesives.field_image
+  module:
+    - commerce_price
+    - image
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: commerce_product_variation.adhesives.cart
+targetEntityType: commerce_product_variation
+bundle: adhesives
+mode: cart
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  list_price:
+    type: commerce_price_default
+    label: hidden
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  price:
+    type: commerce_price_default
+    label: hidden
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  attribute_color: true
+  attribute_packing: true
+  langcode: true
+  product_id: true
+  sku: true
+  title: true
